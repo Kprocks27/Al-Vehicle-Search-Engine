@@ -1,0 +1,3265 @@
+[
+ {
+  "make": "Ford",
+  "model": "EcoSport",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 4,
+  "airbags": 6,
+  "refPrice2022": 746083,
+  "trims": [
+   {
+    "name": "Ambiente",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Trend",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "esp",
+     "fog_lamps",
+     "keyless_entry",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "roof_rails",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Titanium",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "esp",
+     "fog_lamps",
+     "keyless_entry",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "roof_rails",
+     "sunroof",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2021
+ },
+ {
+  "make": "Honda",
+  "model": "Amaze",
+  "body": "SEDAN",
+  "seats": 5,
+  "safety": 4,
+  "airbags": 2,
+  "refPrice2022": 650000,
+  "trims": [
+   {
+    "name": "E",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "electric_orvm",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "S",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "electric_orvm",
+     "keyless_entry",
+     "rear_camera",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "VX",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "electric_orvm",
+     "keyless_entry",
+     "rear_camera",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Honda",
+  "model": "City",
+  "body": "SEDAN",
+  "seats": 5,
+  "safety": 4,
+  "airbags": 6,
+  "refPrice2022": 974860,
+  "trims": [
+   {
+    "name": "SV",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "V",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "ZX",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "auto_headlamps",
+     "climate_control",
+     "connected_car_tech",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "leather_seats",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rain_sensing_wipers",
+     "rear_camera",
+     "sunroof",
+     "touchscreen",
+     "tpms"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Honda",
+  "model": "WR-V",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 4,
+  "airbags": 2,
+  "refPrice2022": 811609,
+  "trims": [
+   {
+    "name": "S",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "SV",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "roof_rails",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "VX",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "roof_rails",
+     "sunroof",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2023
+ },
+ {
+  "make": "Hyundai",
+  "model": "Alcazar",
+  "body": "SUV",
+  "seats": 7,
+  "safety": 3,
+  "airbags": 6,
+  "refPrice2022": 1529851,
+  "trims": [
+   {
+    "name": "Prestige",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "rear_ac_vents",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Platinum",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_ac_vents",
+     "rear_camera",
+     "sunroof",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Signature",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "air_purifier",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "connected_car_tech",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "leather_seats",
+     "led_headlamps",
+     "panoramic_sunroof",
+     "parking_sensors",
+     "powered_driver_seat",
+     "push_button_start",
+     "rear_ac_vents",
+     "rear_camera",
+     "sunroof",
+     "third_row_seating",
+     "touchscreen",
+     "tpms",
+     "ventilated_seats",
+     "wireless_charging"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "DIESEL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2021,
+  "toYear": 2025
+ },
+ {
+  "make": "Hyundai",
+  "model": "Aura",
+  "body": "SEDAN",
+  "seats": 5,
+  "safety": 2,
+  "airbags": 2,
+  "refPrice2022": 625000,
+  "trims": [
+   {
+    "name": "E",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "electric_orvm",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "S",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "electric_orvm",
+     "keyless_entry",
+     "rear_camera",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "SX",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "electric_orvm",
+     "keyless_entry",
+     "rear_camera",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "CNG",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "MANUAL"
+   ]
+  ],
+  "fromYear": 2020,
+  "toYear": 2025
+ },
+ {
+  "make": "Hyundai",
+  "model": "Creta",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 3,
+  "airbags": 6,
+  "refPrice2022": 1177500,
+  "trims": [
+   {
+    "name": "E",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "SX",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "SX (O)",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "air_purifier",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "auto_headlamps",
+     "climate_control",
+     "connected_car_tech",
+     "drive_modes",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "powered_driver_seat",
+     "push_button_start",
+     "rain_sensing_wipers",
+     "rear_camera",
+     "sunroof",
+     "touchscreen",
+     "tpms",
+     "ventilated_seats",
+     "wireless_charging"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "DIESEL",
+    "AUTOMATIC"
+   ],
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Hyundai",
+  "model": "Grand i10 Nios",
+  "body": "HATCHBACK",
+  "seats": 5,
+  "safety": 2,
+  "airbags": 2,
+  "refPrice2022": 543245,
+  "trims": [
+   {
+    "name": "Era",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "electric_orvm",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Magna",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "electric_orvm",
+     "keyless_entry",
+     "rear_camera",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Sportz",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "electric_orvm",
+     "keyless_entry",
+     "rear_camera",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "CNG",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2019,
+  "toYear": 2025
+ },
+ {
+  "make": "Hyundai",
+  "model": "Venue",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 3,
+  "airbags": 2,
+  "refPrice2022": 829384,
+  "trims": [
+   {
+    "name": "E",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "S+",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "SX (O)",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "connected_car_tech",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2019,
+  "toYear": 2025
+ },
+ {
+  "make": "Hyundai",
+  "model": "Verna",
+  "body": "SEDAN",
+  "seats": 5,
+  "safety": 3,
+  "airbags": 6,
+  "refPrice2022": 986069,
+  "trims": [
+   {
+    "name": "S",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "SX",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "SX (O)",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Hyundai",
+  "model": "i20",
+  "body": "HATCHBACK",
+  "seats": 5,
+  "safety": 3,
+  "airbags": 6,
+  "refPrice2022": 750773,
+  "trims": [
+   {
+    "name": "Magna",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Sportz",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Asta (O)",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "connected_car_tech",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen",
+     "tpms",
+     "wireless_charging"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Kia",
+  "model": "Carens",
+  "body": "MUV",
+  "seats": 7,
+  "safety": 3,
+  "airbags": 6,
+  "refPrice2022": 1312884,
+  "trims": [
+   {
+    "name": "Premium",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "isofix",
+     "rear_ac_vents",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Prestige",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "isofix",
+     "keyless_entry",
+     "parking_sensors",
+     "push_button_start",
+     "rear_ac_vents",
+     "rear_camera",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Luxury Plus",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "air_purifier",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "connected_car_tech",
+     "cruise_control",
+     "esp",
+     "isofix",
+     "keyless_entry",
+     "parking_sensors",
+     "push_button_start",
+     "rear_ac_vents",
+     "rear_camera",
+     "third_row_seating",
+     "touchscreen",
+     "ventilated_seats"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "DIESEL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2022,
+  "toYear": 2025
+ },
+ {
+  "make": "Kia",
+  "model": "Seltos",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 3,
+  "airbags": 6,
+  "refPrice2022": 1154881,
+  "trims": [
+   {
+    "name": "HTE",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "HTK+",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "HTX",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "auto_headlamps",
+     "climate_control",
+     "connected_car_tech",
+     "cruise_control",
+     "drive_modes",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rain_sensing_wipers",
+     "rear_camera",
+     "sunroof",
+     "touchscreen",
+     "tpms",
+     "wireless_charging"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "DIESEL",
+    "AUTOMATIC"
+   ],
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2019,
+  "toYear": 2025
+ },
+ {
+  "make": "Kia",
+  "model": "Sonet",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 3,
+  "airbags": 6,
+  "refPrice2022": 931965,
+  "trims": [
+   {
+    "name": "HTE",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "HTK+",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "esp",
+     "fog_lamps",
+     "parking_sensors",
+     "rear_camera",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "HTX",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "esp",
+     "fog_lamps",
+     "parking_sensors",
+     "rear_camera",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2020,
+  "toYear": 2025
+ },
+ {
+  "make": "MG",
+  "model": "Hector",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 3,
+  "airbags": 6,
+  "refPrice2022": 1252776,
+  "trims": [
+   {
+    "name": "Style",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Smart",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "roof_rails",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Sharp",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "camera_360",
+     "climate_control",
+     "connected_car_tech",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "leather_seats",
+     "led_headlamps",
+     "panoramic_sunroof",
+     "parking_sensors",
+     "powered_driver_seat",
+     "push_button_start",
+     "rear_camera",
+     "roof_rails",
+     "sunroof",
+     "touchscreen",
+     "tpms"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2019,
+  "toYear": 2025
+ },
+ {
+  "make": "MG",
+  "model": "ZS EV",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 4,
+  "airbags": 6,
+  "refPrice2022": 1340000,
+  "trims": [
+   {
+    "name": "Excite",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Exclusive",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Exclusive Pro",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "connected_car_tech",
+     "cruise_control",
+     "drive_modes",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "panoramic_sunroof",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen",
+     "tpms"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "ELECTRIC",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2020,
+  "toYear": 2025
+ },
+ {
+  "make": "Mahindra",
+  "model": "Bolero Neo",
+  "body": "SUV",
+  "seats": 7,
+  "safety": 3,
+  "airbags": 2,
+  "refPrice2022": 845000,
+  "trims": [
+   {
+    "name": "N4",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "N8",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "climate_control",
+     "fog_lamps",
+     "parking_sensors",
+     "rear_camera",
+     "roof_rails",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "N10",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "climate_control",
+     "fog_lamps",
+     "parking_sensors",
+     "rear_camera",
+     "roof_rails",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ]
+  ],
+  "fromYear": 2021,
+  "toYear": 2025
+ },
+ {
+  "make": "Mahindra",
+  "model": "Scorpio-N",
+  "body": "SUV",
+  "seats": 7,
+  "safety": 5,
+  "airbags": 6,
+  "refPrice2022": 1767792,
+  "trims": [
+   {
+    "name": "Z2",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "isofix",
+     "rear_ac_vents",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Z4",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "isofix",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_ac_vents",
+     "rear_camera",
+     "sunroof",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Z8",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "auto_headlamps",
+     "climate_control",
+     "connected_car_tech",
+     "cruise_control",
+     "drive_modes",
+     "esp",
+     "isofix",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rain_sensing_wipers",
+     "rear_ac_vents",
+     "rear_camera",
+     "sunroof",
+     "third_row_seating",
+     "touchscreen",
+     "tpms"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "DIESEL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2022,
+  "toYear": 2025
+ },
+ {
+  "make": "Mahindra",
+  "model": "Thar",
+  "body": "SUV",
+  "seats": 4,
+  "safety": 4,
+  "airbags": 2,
+  "refPrice2022": 1105354,
+  "trims": [
+   {
+    "name": "AX (O)",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "LX",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "rear_camera",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "LX Hard Top",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "cruise_control",
+     "drive_modes",
+     "esp",
+     "keyless_entry",
+     "rear_camera",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "DIESEL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2020,
+  "toYear": 2025
+ },
+ {
+  "make": "Mahindra",
+  "model": "XUV300",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 5,
+  "airbags": 7,
+  "refPrice2022": 850380,
+  "trims": [
+   {
+    "name": "W4",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "W6",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "W8 (O)",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "drive_modes",
+     "esp",
+     "front_parking_sensors",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen",
+     "tpms"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "MANUAL"
+   ]
+  ],
+  "fromYear": 2019,
+  "toYear": 2025
+ },
+ {
+  "make": "Mahindra",
+  "model": "XUV700",
+  "body": "SUV",
+  "seats": 7,
+  "safety": 5,
+  "airbags": 6,
+  "refPrice2022": 1761967,
+  "trims": [
+   {
+    "name": "AX3",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "isofix",
+     "rear_ac_vents",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "AX5",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "isofix",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_ac_vents",
+     "rear_camera",
+     "sunroof",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "AX7",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "adas",
+     "air_purifier",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "auto_headlamps",
+     "camera_360",
+     "climate_control",
+     "connected_car_tech",
+     "cruise_control",
+     "drive_modes",
+     "esp",
+     "isofix",
+     "keyless_entry",
+     "leather_seats",
+     "led_headlamps",
+     "panoramic_sunroof",
+     "parking_sensors",
+     "powered_driver_seat",
+     "push_button_start",
+     "rain_sensing_wipers",
+     "rear_ac_vents",
+     "rear_camera",
+     "subwoofer",
+     "sunroof",
+     "third_row_seating",
+     "touchscreen",
+     "tpms"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "DIESEL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2021,
+  "toYear": 2025
+ },
+ {
+  "make": "Maruti Suzuki",
+  "model": "Baleno",
+  "body": "HATCHBACK",
+  "seats": 5,
+  "safety": 3,
+  "airbags": 2,
+  "refPrice2022": 624484,
+  "trims": [
+   {
+    "name": "Sigma",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Delta",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "keyless_entry",
+     "parking_sensors",
+     "rear_camera",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Zeta",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "keyless_entry",
+     "parking_sensors",
+     "rear_camera",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "CNG",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Maruti Suzuki",
+  "model": "Celerio",
+  "body": "HATCHBACK",
+  "seats": 5,
+  "safety": 2,
+  "airbags": 2,
+  "refPrice2022": 500000,
+  "trims": [
+   {
+    "name": "LXi",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "electric_orvm",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "VXi",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "electric_orvm",
+     "keyless_entry",
+     "rear_camera",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "ZXi",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "electric_orvm",
+     "keyless_entry",
+     "rear_camera",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "CNG",
+    "MANUAL"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Maruti Suzuki",
+  "model": "Ciaz",
+  "body": "SEDAN",
+  "seats": 5,
+  "safety": 3,
+  "airbags": 2,
+  "refPrice2022": 667403,
+  "trims": [
+   {
+    "name": "Sigma",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Delta",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Alpha",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Maruti Suzuki",
+  "model": "Dzire",
+  "body": "SEDAN",
+  "seats": 5,
+  "safety": 3,
+  "airbags": 2,
+  "refPrice2022": 689508,
+  "trims": [
+   {
+    "name": "LXi",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "VXi",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "keyless_entry",
+     "parking_sensors",
+     "rear_camera",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "ZXi",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "keyless_entry",
+     "parking_sensors",
+     "rear_camera",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "CNG",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Maruti Suzuki",
+  "model": "Ertiga",
+  "body": "MUV",
+  "seats": 7,
+  "safety": 3,
+  "airbags": 2,
+  "refPrice2022": 1041780,
+  "trims": [
+   {
+    "name": "LXi",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "rear_ac_vents",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "VXi",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "rear_ac_vents",
+     "rear_camera",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "ZXi",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "rear_ac_vents",
+     "rear_camera",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "CNG",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "MANUAL"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Maruti Suzuki",
+  "model": "Swift",
+  "body": "HATCHBACK",
+  "seats": 5,
+  "safety": 2,
+  "airbags": 2,
+  "refPrice2022": 644875,
+  "trims": [
+   {
+    "name": "LXi",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "VXi",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "keyless_entry",
+     "parking_sensors",
+     "rear_camera",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "ZXi",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "keyless_entry",
+     "parking_sensors",
+     "rear_camera",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "CNG",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Maruti Suzuki",
+  "model": "Vitara Brezza",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 4,
+  "airbags": 2,
+  "refPrice2022": 879581,
+  "trims": [
+   {
+    "name": "LDi",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "VDi",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "parking_sensors",
+     "rear_camera",
+     "roof_rails",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "ZDi",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "parking_sensors",
+     "rear_camera",
+     "roof_rails",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2022
+ },
+ {
+  "make": "Maruti Suzuki",
+  "model": "Wagon R",
+  "body": "HATCHBACK",
+  "seats": 5,
+  "safety": 2,
+  "airbags": 2,
+  "refPrice2022": 471222,
+  "trims": [
+   {
+    "name": "LXi",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "electric_orvm"
+    ]
+   },
+   {
+    "name": "VXi",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "climate_control",
+     "electric_orvm",
+     "fog_lamps",
+     "keyless_entry",
+     "parking_sensors",
+     "rear_camera"
+    ]
+   },
+   {
+    "name": "ZXi",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "climate_control",
+     "electric_orvm",
+     "fog_lamps",
+     "keyless_entry",
+     "parking_sensors",
+     "rear_camera"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "CNG",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "MANUAL"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Nissan",
+  "model": "Magnite",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 4,
+  "airbags": 2,
+  "refPrice2022": 645000,
+  "trims": [
+   {
+    "name": "XE",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "XL",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "XV",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "camera_360",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2020,
+  "toYear": 2025
+ },
+ {
+  "make": "Renault",
+  "model": "Kwid",
+  "body": "HATCHBACK",
+  "seats": 5,
+  "safety": 1,
+  "airbags": 1,
+  "refPrice2022": 342605,
+  "trims": [
+   {
+    "name": "RXE",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "electric_orvm",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "RXL",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "climate_control",
+     "electric_orvm",
+     "fog_lamps",
+     "keyless_entry",
+     "parking_sensors",
+     "rear_camera",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "RXT",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "climate_control",
+     "electric_orvm",
+     "fog_lamps",
+     "keyless_entry",
+     "parking_sensors",
+     "rear_camera",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "PETROL",
+    "MANUAL"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Renault",
+  "model": "Triber",
+  "body": "MUV",
+  "seats": 7,
+  "safety": 4,
+  "airbags": 4,
+  "refPrice2022": 595000,
+  "trims": [
+   {
+    "name": "RXE",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "isofix",
+     "rear_ac_vents",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "RXL",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "isofix",
+     "parking_sensors",
+     "rear_ac_vents",
+     "rear_camera",
+     "roof_rails",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "RXZ",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "isofix",
+     "parking_sensors",
+     "rear_ac_vents",
+     "rear_camera",
+     "roof_rails",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "PETROL",
+    "MANUAL"
+   ]
+  ],
+  "fromYear": 2019,
+  "toYear": 2025
+ },
+ {
+  "make": "Skoda",
+  "model": "Slavia",
+  "body": "SEDAN",
+  "seats": 5,
+  "safety": 5,
+  "airbags": 6,
+  "refPrice2022": 963826,
+  "trims": [
+   {
+    "name": "Active",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Ambition",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Style",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "auto_headlamps",
+     "climate_control",
+     "connected_car_tech",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "paddle_shifters",
+     "parking_sensors",
+     "push_button_start",
+     "rain_sensing_wipers",
+     "rear_camera",
+     "subwoofer",
+     "sunroof",
+     "touchscreen",
+     "tpms",
+     "ventilated_seats",
+     "wireless_charging"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2022,
+  "toYear": 2025
+ },
+ {
+  "make": "Tata",
+  "model": "Altroz",
+  "body": "HATCHBACK",
+  "seats": 5,
+  "safety": 5,
+  "airbags": 2,
+  "refPrice2022": 602849,
+  "trims": [
+   {
+    "name": "XE",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "XM",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "esp",
+     "fog_lamps",
+     "keyless_entry",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "XZ+",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "esp",
+     "fog_lamps",
+     "keyless_entry",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "CNG",
+    "MANUAL"
+   ],
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2020,
+  "toYear": 2025
+ },
+ {
+  "make": "Tata",
+  "model": "Harrier",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 5,
+  "airbags": 6,
+  "refPrice2022": 1404961,
+  "trims": [
+   {
+    "name": "XE",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "XM",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "XZ+",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "auto_headlamps",
+     "camera_360",
+     "climate_control",
+     "connected_car_tech",
+     "cruise_control",
+     "drive_modes",
+     "esp",
+     "keyless_entry",
+     "leather_seats",
+     "led_headlamps",
+     "panoramic_sunroof",
+     "parking_sensors",
+     "powered_driver_seat",
+     "push_button_start",
+     "rain_sensing_wipers",
+     "rear_camera",
+     "sunroof",
+     "touchscreen",
+     "tpms"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "DIESEL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2019,
+  "toYear": 2025
+ },
+ {
+  "make": "Tata",
+  "model": "Nexon",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 5,
+  "airbags": 2,
+  "refPrice2022": 835746,
+  "trims": [
+   {
+    "name": "XM",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "XZ+",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "parking_sensors",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "XZ+ (O)",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "connected_car_tech",
+     "cruise_control",
+     "drive_modes",
+     "esp",
+     "parking_sensors",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "DIESEL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Tata",
+  "model": "Nexon EV",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 5,
+  "airbags": 2,
+  "refPrice2022": 1245000,
+  "trims": [
+   {
+    "name": "XM",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "XZ+",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "parking_sensors",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Max XZ+ Lux",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "air_purifier",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "connected_car_tech",
+     "cruise_control",
+     "drive_modes",
+     "esp",
+     "parking_sensors",
+     "rear_camera",
+     "sunroof",
+     "touchscreen",
+     "ventilated_seats",
+     "wireless_charging"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "ELECTRIC",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2020,
+  "toYear": 2025
+ },
+ {
+  "make": "Tata",
+  "model": "Punch",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 5,
+  "airbags": 2,
+  "refPrice2022": 571372,
+  "trims": [
+   {
+    "name": "Pure",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Adventure",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "esp",
+     "fog_lamps",
+     "parking_sensors",
+     "rear_camera",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Creative",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "drive_modes",
+     "esp",
+     "fog_lamps",
+     "parking_sensors",
+     "rear_camera",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2021,
+  "toYear": 2025
+ },
+ {
+  "make": "Tata",
+  "model": "Safari",
+  "body": "SUV",
+  "seats": 7,
+  "safety": 5,
+  "airbags": 6,
+  "refPrice2022": 1778983,
+  "trims": [
+   {
+    "name": "XE",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "isofix",
+     "rear_ac_vents",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "XT",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "isofix",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_ac_vents",
+     "rear_camera",
+     "sunroof",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "XZ+",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "air_purifier",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "camera_360",
+     "climate_control",
+     "connected_car_tech",
+     "cruise_control",
+     "drive_modes",
+     "esp",
+     "isofix",
+     "keyless_entry",
+     "leather_seats",
+     "led_headlamps",
+     "panoramic_sunroof",
+     "parking_sensors",
+     "powered_driver_seat",
+     "push_button_start",
+     "rear_ac_vents",
+     "rear_camera",
+     "sunroof",
+     "third_row_seating",
+     "touchscreen",
+     "tpms"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "DIESEL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2021,
+  "toYear": 2025
+ },
+ {
+  "make": "Tata",
+  "model": "Tiago",
+  "body": "HATCHBACK",
+  "seats": 5,
+  "safety": 4,
+  "airbags": 2,
+  "refPrice2022": 518541,
+  "trims": [
+   {
+    "name": "XE",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "XT",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "keyless_entry",
+     "parking_sensors",
+     "rear_camera",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "XZ+",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "keyless_entry",
+     "parking_sensors",
+     "rear_camera",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "PETROL",
+    "MANUAL"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Toyota",
+  "model": "Fortuner",
+  "body": "SUV",
+  "seats": 7,
+  "safety": 4,
+  "airbags": 7,
+  "refPrice2022": 3258845,
+  "trims": [
+   {
+    "name": "4x2 MT",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "isofix",
+     "rear_ac_vents",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "4x2 AT",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "isofix",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_ac_vents",
+     "rear_camera",
+     "roof_rails",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "4x4 AT",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "auto_headlamps",
+     "camera_360",
+     "climate_control",
+     "cruise_control",
+     "drive_modes",
+     "esp",
+     "isofix",
+     "keyless_entry",
+     "leather_seats",
+     "led_headlamps",
+     "parking_sensors",
+     "powered_driver_seat",
+     "push_button_start",
+     "rain_sensing_wipers",
+     "rear_ac_vents",
+     "rear_camera",
+     "roof_rails",
+     "third_row_seating",
+     "touchscreen",
+     "tpms"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "DIESEL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Toyota",
+  "model": "Glanza",
+  "body": "HATCHBACK",
+  "seats": 5,
+  "safety": 3,
+  "airbags": 2,
+  "refPrice2022": 675000,
+  "trims": [
+   {
+    "name": "E",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "S",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "keyless_entry",
+     "parking_sensors",
+     "rear_camera",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "G",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "keyless_entry",
+     "parking_sensors",
+     "rear_camera",
+     "touchscreen"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "PETROL",
+    "MANUAL"
+   ]
+  ],
+  "fromYear": 2019,
+  "toYear": 2025
+ },
+ {
+  "make": "Toyota",
+  "model": "Innova Crysta",
+  "body": "MUV",
+  "seats": 7,
+  "safety": 3,
+  "airbags": 7,
+  "refPrice2022": 2271699,
+  "trims": [
+   {
+    "name": "G",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "rear_ac_vents",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "GX",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_ac_vents",
+     "rear_camera",
+     "third_row_seating",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "ZX",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "auto_headlamps",
+     "climate_control",
+     "connected_car_tech",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "leather_seats",
+     "led_headlamps",
+     "parking_sensors",
+     "powered_driver_seat",
+     "push_button_start",
+     "rain_sensing_wipers",
+     "rear_ac_vents",
+     "rear_camera",
+     "third_row_seating",
+     "touchscreen",
+     "ventilated_seats"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "DIESEL",
+    "MANUAL"
+   ],
+   [
+    "DIESEL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2018,
+  "toYear": 2025
+ },
+ {
+  "make": "Toyota",
+  "model": "Urban Cruiser Hyryder",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 4,
+  "airbags": 6,
+  "refPrice2022": 1395000,
+  "trims": [
+   {
+    "name": "E",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "S",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "V",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "auto_headlamps",
+     "climate_control",
+     "connected_car_tech",
+     "cruise_control",
+     "drive_modes",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "touchscreen",
+     "tpms",
+     "wireless_charging"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "HYBRID",
+    "AUTOMATIC"
+   ],
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2022,
+  "toYear": 2025
+ },
+ {
+  "make": "Volkswagen",
+  "model": "Taigun",
+  "body": "SUV",
+  "seats": 5,
+  "safety": 5,
+  "airbags": 6,
+  "refPrice2022": 1335000,
+  "trims": [
+   {
+    "name": "Comfortline",
+    "tier": "base",
+    "features": [
+     "abs_ebd",
+     "android_auto",
+     "apple_carplay",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "Highline",
+    "tier": "mid",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "climate_control",
+     "cruise_control",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "parking_sensors",
+     "push_button_start",
+     "rear_camera",
+     "sunroof",
+     "touchscreen"
+    ]
+   },
+   {
+    "name": "GT Plus",
+    "tier": "top",
+    "features": [
+     "abs_ebd",
+     "alloy_wheels",
+     "android_auto",
+     "apple_carplay",
+     "auto_headlamps",
+     "climate_control",
+     "connected_car_tech",
+     "cruise_control",
+     "drive_modes",
+     "esp",
+     "keyless_entry",
+     "led_headlamps",
+     "paddle_shifters",
+     "parking_sensors",
+     "push_button_start",
+     "rain_sensing_wipers",
+     "rear_camera",
+     "sunroof",
+     "touchscreen",
+     "tpms",
+     "ventilated_seats",
+     "wireless_charging"
+    ]
+   }
+  ],
+  "powertrains": [
+   [
+    "PETROL",
+    "MANUAL"
+   ],
+   [
+    "PETROL",
+    "AUTOMATIC"
+   ]
+  ],
+  "fromYear": 2021,
+  "toYear": 2025
+ }
+]

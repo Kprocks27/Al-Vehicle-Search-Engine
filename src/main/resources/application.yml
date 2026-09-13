@@ -1,0 +1,144 @@
+spring:
+  application:
+    name: car-search
+
+  datasource:
+    # In-memory for the take-home: clone, run, search -- no database to install. The service
+    # only uses portable JPA, so pointing this at Postgres is a URL and a driver away.
+    url: jdbc:h2:mem:carsearch;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      # The entity is the single source of truth for the schema in this build, so the mapping
+      # and the tables cannot drift. A real deployment gets versioned Flyway migrations instead:
+      # create-drop is fine for a catalogue that is rebuilt from seed data on every start, and
+      # unacceptable for one holding real listings.
+      ddl-auto: create-drop
+    # Off deliberately. With open-in-view on, a lazy association can be loaded during JSON
+    # serialisation, outside any transaction anyone declared, and the resulting N+1 only shows
+    # up under load. Results are projected inside the service transaction instead.
+    open-in-view: false
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  sql:
+    init:
+      mode: always
+      data-locations: classpath:db/seed.sql
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+carsearch:
+  parser:
+    # stub | claude. Stub is the default so the build, the tests and a fresh clone all work with
+    # no API key and no spend. Switch to claude and export ANTHROPIC_API_KEY to use the real one.
+    implementation: stub
+    claude:
+      model: claude-opus-5
+      # Blank omits the parameter. Some models reject it outright (Haiku 4.5 among them), so
+      # "unset" has to be expressible rather than defaulted into a broken request.
+      effort: low
+      max-tokens: 2048
+      timeout: 30s
+
+  cache:
+    # Caffeine spec. Size caps memory against attacker-controlled keys; the TTL bounds how long
+    # an interpretation outlives the prompt that produced it once this cache is shared.
+    spec: maximumSize=1000,expireAfterWrite=24h
+
+  vocabulary:
+    # The feature allow-list. Anything the parser returns that is not on this list is rejected
+    # at the validation boundary rather than quietly searched for and found missing.
+    #
+    # This is a vocabulary, not an inventory: a tag can be valid and still match nothing, which
+    # is a legitimate "we don't have one" rather than an error.
+    features:
+      - abs_ebd
+      - adas
+      - air_purifier
+      - alloy_wheels
+      - android_auto
+      - apple_carplay
+      - auto_headlamps
+      - camera_360
+      - climate_control
+      - connected_car_tech
+      - cruise_control
+      - drive_modes
+      - electric_orvm
+      - esp
+      - fog_lamps
+      - front_parking_sensors
+      - heads_up_display
+      - isofix
+      - keyless_entry
+      - leather_seats
+      - led_headlamps
+      - paddle_shifters
+      - panoramic_sunroof
+      - parking_sensors
+      - powered_driver_seat
+      - powered_tailgate
+      - push_button_start
+      - rain_sensing_wipers
+      - rear_ac_vents
+      - rear_camera
+      - roof_rails
+      - subwoofer
+      - sunroof
+      - third_row_seating
+      - touchscreen
+      - tpms
+      - ventilated_seats
+      - wireless_charging
+
+    # Glosses for the handful of tags a model cannot reliably guess from the name -- acronyms, and
+    # pairs where one tag is the narrower case of another. Deliberately not one per tag: glossing
+    # all 38 buries the ones that matter and pushes the model toward matching on the prose rather
+    # than on the tag. Every key here must be a tag above; startup fails otherwise.
+    feature-notes:
+      abs_ebd: >-
+        anti-lock brakes with electronic brakeforce distribution. Use for "ABS", "anti-lock
+        brakes", "EBD". Nearly every car has it, so it rarely narrows anything.
+      esp: >-
+        electronic stability control. Use for "ESP", "ESC", "stability control", "traction
+        control".
+      tpms: tyre pressure monitoring system. Use for "tyre pressure warning".
+      adas: >-
+        driver assistance suite -- lane keeping, automatic emergency braking, adaptive cruise.
+        Use for "ADAS", "driver assist", "lane assist", "collision warning".
+      isofix: child seat anchor points. Use for "child seat", "baby seat", "ISOFIX".
+      electric_orvm: electrically adjustable wing mirrors.
+      connected_car_tech: >-
+        built-in connected services -- remote lock, vehicle location, over-the-air updates.
+      ventilated_seats: cooled seats. Use for "cooled seats", "ventilated seats", "AC seats".
+      rear_camera: >-
+        reversing camera. Use for "reverse camera", "backup camera", "parking camera".
+      camera_360: >-
+        surround-view camera. Narrower than rear_camera, and every car with it also carries
+        rear_camera -- so use rear_camera for a plain "reverse camera" and camera_360 only when
+        the shopper says "360" or "surround".
+      sunroof: >-
+        any opening roof panel. Every car with panoramic_sunroof also carries this, so use
+        sunroof for a plain "sunroof" and it will match both kinds.
+      panoramic_sunroof: >-
+        full-length glass roof. Narrower than sunroof -- use it only when the shopper says
+        "panoramic", "full length" or "large".
+      front_parking_sensors: >-
+        narrower than parking_sensors, and cars with it also carry parking_sensors. Use
+        parking_sensors unless the shopper specifically says "front".
+
+logging:
+  level:
+    com.cars24.carsearch: DEBUG
+    # Uncomment to watch the generated SQL and the values bound to it -- the quickest way to
+    # confirm by eye that model output reaches the database as parameters, never as SQL text.
+    # org.hibernate.SQL: DEBUG
+    # org.hibernate.orm.jdbc.bind: TRACE

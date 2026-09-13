@@ -1,0 +1,11 @@
+target/
+!.mvn/wrapper/maven-wrapper.properties
+
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+.DS_Store
+*.log
