@@ -9,3 +9,11 @@ target/
 
 .DS_Store
 *.log
+
+# Local overrides. Spring reads these ahead of application.yml, which makes them the
+# natural place to drop an API key -- so they must never be committable.
+.env
+.env.local
+application-local.yml
+application-local.properties
+secrets.json
