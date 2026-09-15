@@ -13,8 +13,10 @@ import java.time.Duration;
  *                 option rather than a default that quietly breaks a model switch.
  * @param maxTokens ceiling on the response. The output here is a small JSON object; this exists to
  *                  bound a runaway, not to shape the answer.
- * @param timeout  per-request ceiling. The SDK default is ten minutes, which is the right default
- *                 for long generations and the wrong one for a search box.
+ * @param timeout  ceiling per attempt, not per search. The SDK retries a timed-out attempt twice by
+ *                 default, so a search can wait about three times this, plus backoff, before the
+ *                 parser gives up. The SDK default is ten minutes, which is the right default for
+ *                 long generations and the wrong one for a search box.
  */
 @ConfigurationProperties(prefix = "carsearch.parser.claude")
 public record ClaudeParserProperties(String model, String effort, Long maxTokens, Duration timeout) {

@@ -21,8 +21,8 @@ import java.util.Set;
  * vocabulary is an allow-list, and it lives in configuration rather than in a Java enum: adding a
  * feature is a config change plus a prompt change, with no recompile and no schema touch.
  *
- * <p>This same set is what gets injected into the model's prompt when the real parser lands, so
- * the list the model is told about and the list we validate against cannot drift apart.
+ * <p>This same set is rendered into the Claude parser's prompt by {@code SearchContract}, so the
+ * list the model is told about and the list we validate against cannot drift apart.
  */
 @Component
 @ConfigurationProperties(prefix = "carsearch.vocabulary")

@@ -108,7 +108,7 @@ public class Vehicle {
 
     /**
      * Feature tags, e.g. "sunroof". Lazy because most callers page through results and the
-     * search predicates use an EXISTS subquery rather than a join, so we never need the
+     * search predicates use a correlated subquery rather than a join, so we never need the
      * collection to filter. BatchSize collapses the per-row lookups we do need for the
      * response body into one extra query per page instead of one per vehicle; 50 matches the
      * maximum page size the API allows, so a full page never costs more than two round trips.

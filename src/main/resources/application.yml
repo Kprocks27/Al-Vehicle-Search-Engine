@@ -35,6 +35,12 @@ spring:
       enabled: true
       path: /h2-console
 
+  mvc:
+    problemdetails:
+      # Spring's own request errors (missing parameter, wrong type, unknown path, wrong method)
+      # come back as RFC 7807, the same shape ApiExceptionHandler returns.
+      enabled: true
+
 carsearch:
   parser:
     # stub | claude. Stub is the default so the build, the tests and a fresh clone all work with

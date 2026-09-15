@@ -6,12 +6,11 @@ import java.util.Set;
 /**
  * A validated, fully-typed search. Trusted.
  *
- * <p>Anything constructed as a {@code SearchCriteria} has already been through the validator:
- * every field is a known column, every comparison is one of the four, every value matches its
- * field's type, and every feature tag is in the catalogue. This type existing separately from
- * {@code ParsedQuery} is what makes "validated" a thing the compiler can check -- the query
- * builder accepts this and nothing else, so there is no code path from raw parser output to the
- * database that skips validation.
+ * <p>The validator is the only code that produces a {@code SearchCriteria}: every field is a
+ * known column, every comparison is one of the four, every value matches its field's type, and
+ * every feature tag is in the catalogue. The query builder accepts this and nothing else, so no
+ * existing path from raw parser output to the database skips validation. The compiler does not
+ * enforce that -- this is a public record, and a new caller could construct one directly.
  *
  * <p>Filters and features are ANDed, and so are the individual entries within each. A shopper
  * listing three things wants all three.

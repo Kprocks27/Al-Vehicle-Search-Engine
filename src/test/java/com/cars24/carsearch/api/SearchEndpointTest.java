@@ -29,7 +29,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * JSON out. The stub parser is what makes this runnable in CI with no API key.
  *
  * <p>Assertions are about properties, not counts. An exact count was a useful regression check
- * when the catalogue was 47 hand-written rows; at 186 generated ones it only records whatever the
+ * when the catalogue was 47 hand-written rows; at 182 generated ones it only records whatever the
  * generator last produced, and any catalogue tweak breaks every test for no real reason. What
  * matters is that every returned car actually satisfies the query and that something came back at
  * all -- a query returning the right number of wrong cars still fails here.

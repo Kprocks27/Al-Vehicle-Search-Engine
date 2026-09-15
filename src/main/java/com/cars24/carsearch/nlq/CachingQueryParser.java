@@ -13,7 +13,7 @@ import org.springframework.cache.Cache;
  * here, between the sentence and the conditions, and the database is queried fresh every time.
  *
  * <p>A decorator rather than an annotation on the parser itself, for two reasons. The stub and
- * the eventual LLM implementation get identical caching without either knowing about it, and the
+ * the Claude parser get identical caching without either knowing about it, and the
  * caching behaviour is testable with a counting fake and no Spring context.
  */
 public class CachingQueryParser implements QueryParser {

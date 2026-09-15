@@ -16,10 +16,10 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * The pipeline, in four lines.
  *
- * <p>interpret -&gt; validate -&gt; build -&gt; execute. Each step hands the next a type it cannot
- * skip: the parser produces {@code ParsedQuery}, which only the validator accepts; the validator
- * produces an {@code Interpretation} whose {@code SearchCriteria} is the only thing the builder
- * accepts. The ordering is enforced by the types rather than by everyone remembering it.
+ * <p>interpret -&gt; validate -&gt; build -&gt; execute. The parser produces {@code ParsedQuery},
+ * which only the validator accepts. The validator is the only producer of {@code SearchCriteria},
+ * and the builder accepts nothing else, so no existing path skips validation. The compiler does
+ * not enforce this; a new caller could construct a {@code SearchCriteria} directly.
  *
  * <p>Note what this class does not do. It does not know the query came in over HTTP, it does not
  * know an LLM is involved, and it does not know how results will be rendered.

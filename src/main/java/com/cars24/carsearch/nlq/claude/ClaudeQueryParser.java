@@ -1,7 +1,7 @@
 package com.cars24.carsearch.nlq.claude;
 
 import com.anthropic.client.AnthropicClient;
-import com.anthropic.errors.AnthropicServiceException;
+import com.anthropic.errors.AnthropicException;
 import com.anthropic.models.messages.CacheControlEphemeral;
 import com.anthropic.models.messages.TextBlock;
 import com.anthropic.models.messages.Message;
@@ -21,10 +21,12 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * The real parser: one Claude call per uncached query, constrained to a JSON schema.
+ * The real parser: one Claude call per uncached query, up to three when the SDK retries a failure,
+ * constrained to a JSON schema.
  *
- * <p>Note what this class is not allowed to do. It has no repository, no EntityManager, no
- * connection -- the {@link QueryParser} interface gives it nowhere to reach. It returns a
+ * <p>Note what this class does not have: no repository, no EntityManager, no connection. The
+ * {@link QueryParser} interface hands it none and it takes none; that is a rule kept by whoever
+ * writes the code, not something the compiler enforces. It returns a
  * {@code ParsedQuery} of plain strings that the validator then takes apart claim by claim. Every
  * guarantee downstream of here was built and tested against the stub, so this implementation
  * inherits a pipeline that already assumes it will sometimes be wrong.
@@ -56,10 +58,11 @@ public class ClaudeQueryParser implements QueryParser {
         Message response;
         try {
             response = client.messages().create(request(query));
-        } catch (AnthropicServiceException e) {
-            // The interpretation layer is down or refusing. That is not the shopper's problem and
-            // not something a different sentence would fix, so it must not surface as "we did not
-            // understand you".
+        } catch (AnthropicException e) {
+            // The interpretation layer is down, unreachable, timed out or refusing. The base class
+            // covers HTTP errors and network failures alike, once the SDK's own retries are spent.
+            // That is not the shopper's problem and not something a different sentence would fix,
+            // so it must not surface as "we did not understand you".
             throw new ParserUnavailableException("Claude call failed: " + e.getMessage(), e);
         }
 

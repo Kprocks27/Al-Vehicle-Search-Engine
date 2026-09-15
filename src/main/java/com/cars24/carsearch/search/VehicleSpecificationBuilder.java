@@ -25,9 +25,10 @@ import java.util.Set;
  * attribute. The safety is structural rather than a matter of remembering to escape.
  *
  * <p>Filters and features are all ANDed. Features use {@code isMember}, which Hibernate renders
- * as an EXISTS subquery against the tag table, one per tag. The alternative -- joining the tag
- * table once per feature -- multiplies rows and forces a DISTINCT, which breaks accurate paging.
- * EXISTS keeps one row per vehicle no matter how many tags are asked for.
+ * as a correlated subquery against the tag table, one per tag:
+ * {@code ? in (select feature from vehicle_features where vehicle_id = v.id)}. The alternative --
+ * joining the tag table once per feature -- multiplies rows and forces a DISTINCT, which breaks
+ * accurate paging. A subquery keeps one row per vehicle no matter how many tags are asked for.
  */
 @Component
 public class VehicleSpecificationBuilder {

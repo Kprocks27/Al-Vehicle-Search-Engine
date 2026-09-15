@@ -25,8 +25,9 @@ RNG_SEED = 24
 OUT = "src/main/resources/db/seed.sql"
 CATALOGUE = "scripts/seed-data/catalogue.json"
 
-# Weighted toward one to three years old, which is where organised used inventory actually sits,
-# with a thinning tail back to 2018.
+# Weighted toward one to three years old, with a thinning tail back to 2018. A judgement call, not
+# a sourced figure: a catalogue with nothing newer than 2023 looks stale to anyone who knows this
+# market.
 YEAR_WEIGHTS = {2025: 18, 2024: 20, 2023: 18, 2022: 13, 2021: 11, 2020: 8, 2019: 7, 2018: 5}
 
 # A car one year newer sells for about 7% more, measured across adjacent model years in public

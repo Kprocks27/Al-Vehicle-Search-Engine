@@ -14,10 +14,10 @@ import java.util.Map;
 /**
  * A fixture-backed parser: a lookup table of known sentences and the structure they mean.
  *
- * <p>This is scaffolding, and it is meant to be deleted the day the LLM implementation lands. It
- * exists so the rest of the pipeline -- validation, fuzzy resolution, query building, the
- * endpoint -- can be built, run and tested end to end without an API key, a network call, or a
- * bill. It is a table lookup, not a second parser: there is no regex matching, no keyword
+ * <p>It sits alongside the Claude parser rather than being replaced by it. It is the default
+ * implementation and the one the test suite runs against, so the rest of the pipeline --
+ * validation, fuzzy resolution, query building, the endpoint -- can be built, run and tested end
+ * to end without an API key, a network call, or a bill. It is a table lookup, not a second parser: there is no regex matching, no keyword
  * extraction, no attempt at understanding. Anything cleverer here would be a competing
  * implementation of the one job the model is supposed to do, and would have to be maintained
  * alongside it.

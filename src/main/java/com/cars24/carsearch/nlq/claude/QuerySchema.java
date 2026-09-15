@@ -39,31 +39,31 @@ final class QuerySchema {
 
     static JsonOutputFormat build() {
         Map<String, Object> filter = object(
-                Map.of(
-                        "field", Map.of(
+                ordered(
+                        Map.entry("field", Map.of(
                                 "type", "string",
                                 "description", "A field name from the Fields list, or -- for a "
                                         + "constraint the catalogue cannot express -- a descriptive "
-                                        + "name that is deliberately not one of them."),
-                        "comparison", Map.of(
+                                        + "name that is deliberately not one of them.")),
+                        Map.entry("comparison", Map.of(
                                 "type", "string",
-                                "enum", Arrays.stream(Comparison.values()).map(Enum::name).toList()),
-                        "values", Map.of(
+                                "enum", Arrays.stream(Comparison.values()).map(Enum::name).toList())),
+                        Map.entry("values", Map.of(
                                 "type", "array",
                                 "items", Map.of("type", "string"),
                                 "minItems", 1,
                                 "description", "Plain digit strings for numbers -- no symbols, "
                                         + "commas, or unit words. Two values for BETWEEN, one "
-                                        + "otherwise.")),
+                                        + "otherwise."))),
                 List.of("field", "comparison", "values"));
 
         Map<String, Object> root = object(
-                Map.of(
-                        "filters", Map.of("type", "array", "items", filter),
-                        "features", Map.of(
+                ordered(
+                        Map.entry("filters", Map.of("type", "array", "items", filter)),
+                        Map.entry("features", Map.of(
                                 "type", "array",
                                 "items", Map.of("type", "string"),
-                                "description", "Bare feature tags. Never a field name.")),
+                                "description", "Bare feature tags. Never a field name."))),
                 List.of("filters", "features"));
 
         return JsonOutputFormat.builder()
@@ -71,6 +71,24 @@ final class QuerySchema {
                         .additionalProperties(toJsonValues(root))
                         .build())
                 .build();
+    }
+
+    /**
+     * Properties in exactly the order given. Structured output writes keys in schema order, so this
+     * order is the order the model decides things in, at both levels: inside a filter, field and
+     * comparison before values; at the top level, filters before features. It must not come from
+     * {@code Map.of}, whose iteration order is reshuffled on every JVM start. With {@code values}
+     * first, the model has to write the numbers before naming the field, and "from 5 to 10 lakhs"
+     * came back as {@code price BETWEEN [""]}; the top-level order changed how often that happened.
+     * Measured over 80 live calls: 7 malformed in 39 completed unpinned, 0 in 39 pinned.
+     */
+    @SafeVarargs
+    private static Map<String, Object> ordered(Map.Entry<String, ?>... properties) {
+        Map<String, Object> out = new LinkedHashMap<>();
+        for (Map.Entry<String, ?> property : properties) {
+            out.put(property.getKey(), property.getValue());
+        }
+        return out;
     }
 
     private static Map<String, Object> object(Map<String, Object> properties, List<String> required) {

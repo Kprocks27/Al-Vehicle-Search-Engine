@@ -1,5 +1,7 @@
 package com.cars24.carsearch.validation;
 
+import com.cars24.carsearch.catalogue.AccidentHistory;
+import com.cars24.carsearch.catalogue.FuelType;
 import com.cars24.carsearch.nlq.ParsedFilter;
 import com.cars24.carsearch.nlq.ParsedQuery;
 import com.cars24.carsearch.search.DropCategory;
@@ -83,6 +85,73 @@ class ParsedQueryValidatorTest {
             assertThat(criterion.comparison()).isEqualTo(Comparison.BETWEEN);
             assertThat(criterion.lower()).isEqualTo(new BigDecimal("500000"));
             assertThat(criterion.upper()).isEqualTo(new BigDecimal("1000000"));
+        }
+
+        @Test
+        void keepsBothBoundsOfAYearRange() {
+            // "2018 to 2021 models". Year is a whole number rather than money, so it goes through
+            // different coercion from the price range above.
+            SearchCriteria criteria = validator.validate(new ParsedQuery(
+                    List.of(filter("year", "BETWEEN", "2018", "2021")), List.of())).criteria();
+
+            FieldCriterion criterion = criteria.filters().get(0);
+            assertThat(criterion.field()).isEqualTo(VehicleField.YEAR);
+            assertThat(criterion.comparison()).isEqualTo(Comparison.BETWEEN);
+            assertThat(criterion.lower()).isEqualTo(2018);
+            assertThat(criterion.upper()).isEqualTo(2021);
+        }
+
+        @Test
+        void keepsBothBoundsOfAKilometreRange() {
+            // "40k-60k km". Kilometres also has magnitude bands, so this checks two real numbers
+            // are still read as a range and not mistaken for a level.
+            SearchCriteria criteria = validator.validate(new ParsedQuery(
+                    List.of(filter("kilometres", "BETWEEN", "40000", "60000")), List.of())).criteria();
+
+            FieldCriterion criterion = criteria.filters().get(0);
+            assertThat(criterion.comparison()).isEqualTo(Comparison.BETWEEN);
+            assertThat(criterion.lower()).isEqualTo(40_000);
+            assertThat(criterion.upper()).isEqualTo(60_000);
+        }
+
+        @Test
+        void keepsEachRangeWithItsOwnField() {
+            // "2019 to 2022, 6 to 9 lakhs, 20k to 50k km": three ranges in one sentence, and each
+            // pair of bounds has to stay with the field it belongs to.
+            SearchCriteria criteria = validator.validate(new ParsedQuery(
+                    List.of(
+                            filter("year", "BETWEEN", "2019", "2022"),
+                            filter("price", "BETWEEN", "600000", "900000"),
+                            filter("kilometres", "BETWEEN", "20000", "50000")),
+                    List.of())).criteria();
+
+            assertThat(criteria.filters())
+                    .extracting(FieldCriterion::field, FieldCriterion::lower, FieldCriterion::upper)
+                    .containsExactly(
+                            org.assertj.core.groups.Tuple.tuple(VehicleField.YEAR, 2019, 2022),
+                            org.assertj.core.groups.Tuple.tuple(VehicleField.PRICE,
+                                    new BigDecimal("600000"), new BigDecimal("900000")),
+                            org.assertj.core.groups.Tuple.tuple(VehicleField.KILOMETRES, 20_000, 50_000));
+        }
+
+        @Test
+        void readsNoAccidentHistoryAsAValue() {
+            // Negative wording, but for a value the catalogue holds -- so a normal filter, not an
+            // exclusion to be ignored.
+            SearchCriteria criteria = validator.validate(new ParsedQuery(
+                    List.of(filter("accidentHistory", "EQUALS", "NONE")), List.of())).criteria();
+
+            assertThat(criteria.filters()).hasSize(1);
+            assertThat(criteria.filters().get(0).single()).isEqualTo(AccidentHistory.NONE);
+        }
+
+        @Test
+        void acceptsElectricAsAFuelType() {
+            SearchCriteria criteria = validator.validate(new ParsedQuery(
+                    List.of(filter("fuelType", "EQUALS", "ELECTRIC")), List.of())).criteria();
+
+            assertThat(criteria.filters()).hasSize(1);
+            assertThat(criteria.filters().get(0).single()).isEqualTo(FuelType.ELECTRIC);
         }
 
         @Test
@@ -202,6 +271,23 @@ class ParsedQueryValidatorTest {
         void valueOutsideAnEnum() {
             assertThat(onlyDroppedFilter(filter("fuelType", "EQUALS", "HYDROGEN")).reason())
                     .contains("is not a valid fuelType");
+        }
+
+        @Test
+        void bodyTypeOutsideTheCatalogue() {
+            // "convertibles under 20 lakh". The price still runs; the convertible is reported, not
+            // applied.
+            Interpretation interpretation = validator.validate(new ParsedQuery(
+                    List.of(
+                            filter("price", "UNDER", "2000000"),
+                            filter("bodyType", "EQUALS", "CONVERTIBLE")),
+                    List.of()));
+
+            assertThat(interpretation.criteria().filters()).extracting(FieldCriterion::field)
+                    .containsExactly(VehicleField.PRICE);
+            assertThat(interpretation.ignoredFilters()).hasSize(1);
+            assertThat(interpretation.ignoredFilters().get(0).reason())
+                    .contains("is not a valid bodyType");
         }
 
         @Test
